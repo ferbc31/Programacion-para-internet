@@ -10,6 +10,7 @@ su visualización
 3. Agregar que cada celda tenga el color correspondiente (negro o
 blanco)
 \
+
 Entregables:
 1. Subir mediante ClassRoom un screenshot del HTML generado incluyendo
 el URL del navegador
