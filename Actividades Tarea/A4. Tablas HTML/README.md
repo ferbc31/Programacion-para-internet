@@ -1,5 +1,5 @@
 # A4. Tablas HTML
-Crear 4 estructuras básica de HTML que cada una contenga una tabla <table></table> con la estructura de los archivos adjuntos
+Crear 4 estructuras básica de HTML que cada una contenga una tabla "<table></table>" con la estructura de los archivos adjuntos
 
 Requerimientos:
 1. Ser un documento con la estructura básica de un HTML vista en clase
