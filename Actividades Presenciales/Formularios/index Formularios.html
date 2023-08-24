@@ -1,24 +1,41 @@
 <html>
 <head>
-    <title>22/08/2023 Programacion para internet</title>
+    <title>24/08/2023 Programacion para internet</title>
+    <script>
+        //alert('Bienvenido...')
+    
+    var nombre='Fernando';
+    var apellidos= 'Benavides';
+    var calificacion= 99;
+
+    function miAlerta(nombre,calificacion){
+        alert('Hola '+nombre+', tu calificacion es: '+calificacion);
+        console.log('Resultado:___')
+    }
+
+    function validar(){
+        var correo=document.Forma01.correo.value;
+        alert(correo);
+    }
+
+    miAlerta(nombre, calificacion);
+
+    </script>
 </head>
 <body>
 
-<form name="Forma01" id="Forma01">
-    
+<form name="Forma01" id="Forma01" method="get" action="recibe.php">
 <input type="text" name="correo" id="correo" value="@"/> <br>
 <input type="text" name="pass" id="pass" placeholder="Escribe tu pass" /><br>
 <select name="rol">
-    <option value="0">Selecciona rol</option>
+    <option value="0">Selecciona rol</option> <!--GET or POST-->
     <option value="1">Gerente</option>
     <option value="2">Ejecutivo</option>
-    <option value="3">de Canela auuuu</option>
-    <option value="3">chilemorron</option>
+    <option value="3">De Canela auuuu</option>
+    <option value="3">Chilemorron</option>
 </select>
 
-<input type="submit" value="Enviar" src="472.png" style='width:300px; height:130px'/>
-
-
+<input type="submit" onclick="validar(); return false;" value="Enviar"/>
 </form>
     
 </body>
