@@ -1,0 +1,60 @@
+<html>
+<head>
+    <title>24/08/2023 Programacion para internet</title>
+    <script>
+        var semana=new Array('Lunes','Martes','Miercoles','Jueves','Viernes','Sabado', 'Domingo','oa');
+        var dia= semana[0];
+        console.log(dia)
+
+        function mostrarArreglo() {
+            for (var i=1; i<semana.length; i++) {
+                console.log(semana[i]);
+            }
+        }
+        mostrarArreglo();
+
+        var nombresUsuarios=new Array('')
+
+        var contrasenas=new Array('')
+
+
+        var nombre = 'Fernando';
+        var apellidos = 'Benavides';
+        var calificacion = 99;
+
+        function miAlerta(nombre, calificacion) {
+            alert('Hola ' + nombre + ', tu calificacion es: ' + calificacion);
+            console.log('Resultado:___');
+        }
+
+        function validar() {
+            var correo = document.Forma01.correo.value;
+            var pass = document.Forma01.pass.value;
+            var rol = document.Forma01.rol.value;
+
+            if (correo == '' || pass == '' || rol == '0') {
+                alert('Faltan campos por llenar');
+            } else {
+                alert('Usuario Encontrado. Datos llenos');
+            }
+        }
+        function asingar(){
+            var valor='apap@gmail.com';
+            document.Forma01.correo.value=valor;
+        }
+
+    </script>
+</head>
+<body>
+    <form name="Forma01" id="Forma01" method="get" action="recibe.php">
+        <input type="text" name="correo" id="correo" value="@"/> <br>
+        <input type="text" name="pass" id="pass" placeholder="Escribe tu pass" /><br>
+        <select name="rol">
+            <option value="0">Selecciona rol</option>
+            <option value="1">Gerente</option>
+            <option value="2">Ejecutivo</option>
+        </select>
+        <input type="submit" onclick="validar(); return false;" value="Enviar"/>
+    </form>
+</body>
+</html>
