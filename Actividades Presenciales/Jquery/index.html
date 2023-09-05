@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title>JQUERY 02</title>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script> 
+        function recibe() {
+           
+        }
+    </script>
+</head>
+<body>
+    <form name="Forma01" id="Forma01" method="get" action="recibe.php">
+        <input type="text" name="correo" id="correo" value="@"/> <br>
+        <input type="text" name="pass" id="pass" placeholder="Escribe tu pass" /><br>
+        <select name="rol">
+            <option value="0">Selecciona</option>
+            <option value="1">Gerente</option>
+            <option value="2">Ejecutivo</option>
+        </select>
+        <input type="submit" onclick="validar(); return false;" value="Enviar"/>
+    </form>
+</body>
+</html>

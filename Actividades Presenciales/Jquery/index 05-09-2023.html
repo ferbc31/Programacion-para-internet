@@ -1,0 +1,66 @@
+<html>
+<head>
+    <title>Clase 05/09/2023</title>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script> 
+        function eliminaAlumnos() {
+            $('.alumno').hide();
+            //$('#mensaje').html('Tu registro fue eliminado...');
+            $('#mensaje').html('<img src="oatchi-pikmin-4.gif">');
+           setTimeout("$('#mensaje').html('');",5000);
+        }
+        /*function eliminaMAestros(){
+            $('#maestro1').hide();
+            $('#mensaje').html('<img src="blackpink-lisa.gif">');
+           setTimeout("$('#mensaje').html('');",2500);
+        }
+        */
+        function eliminaMAestros(id){
+            $('#maestro'+id).hide();
+            $('#mensaje').html('<img src="blackpink-lisa.gif">');
+           setTimeout("$('#mensaje').html('');",2500);
+        }
+    </script>
+    <style>
+         #mensaje{
+            color: #f00;
+            font-size: 18px;
+            font-weight: bold;
+            width: 224px;
+            height: 30px;
+            line-height: 30px;
+            background-color: #ccc;
+            text-align: center;
+         }
+         .alumno{
+            color:#0066cc;
+            line-height: 22px;
+         }
+         .maestro{
+            color: #005alf;
+            line-height: 22px;
+         }
+         .reprobado{
+            background-color: #FF0000;
+         }
+        table{
+
+        }
+
+    /*
+    estos son comentarios
+    */
+    
+    </style>
+</head>
+<body>
+    <div class="alumno">Rúben Maldonado</div>
+    <div class="alumno">Aaron Jimenez</div>
+    <div class="alumno reprobado">Marisela Guzman</div>
+    <div class="maestro" id="maestro1">Patricia Lopez</div>
+    <div class="maestro" id="maestro2">Luis Casillas</div>
+    <input onclick="eliminaMAestros(2);"type="submit" value="Eliminar"></input>
+    <div id="mensaje"></div>
+    
+</body>
+</html>
