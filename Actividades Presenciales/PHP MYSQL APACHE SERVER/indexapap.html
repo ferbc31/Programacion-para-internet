@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>A6. Validacion de campos con JS 01</title>
+    <script> 
+ 
+ function validar(){
+        var correo=document.Forma01.correo.value;
+        var pass=document.Forma01.pass.value;
+        var rol=document.Forma01.rol.value;
+
+        if(correo=='' || pass=='' || rol==0){
+            alert('Campos vacios')
+        }
+        else{
+            document.Forma1.method= 'post';
+            document.Forma1.action= 'recibe.php';
+            document.Forma1.submit();
+        }
+        alert(correo);
+    }
+    </script>
+</head>
+<body>
+    <form name="Forma01" id="Forma01" method="get" action="recibe.php">
+        <input type="text" name="correo" id="correo" value="@"/> <br>
+        <input type="text" name="pass" id="pass" placeholder="Escribe tu pass" /><br>
+        <select name="rol">
+            <option value="0">Selecciona</option>
+            <option value="1">Gerente</option>
+            <option value="2">Ejecutivo</option>
+        </select>
+        <input type="submit" onclick="validar(); return false;" value="Enviar"/>
+    </form>
+</body>
+</html>
