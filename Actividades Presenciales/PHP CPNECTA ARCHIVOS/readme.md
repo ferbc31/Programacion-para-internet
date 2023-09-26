@@ -1,3 +1,3 @@
-PHP
+# PHP
 
-crear base de datos-> Crear tabla con 10 columnas-> Id, nombre, etc.
+Para crear una base de datos en PHP y posteriormente crear una tabla con 10 columnas, incluyendo "Id" y "nombre"
